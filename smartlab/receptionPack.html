@@ -1,0 +1,620 @@
+
+
+<!--
+ // WEBSITE: labtech
+ // author: saoudi anis
+ // from : @wm.dev
+ // GITHUB: https://github.com/saoudianis
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Receipted Tubes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Saoudi Anis">
+	<link rel="shortcut icon" href="images/smart%20lab.png" type="image/x-icon">
+	<link rel="icon" href="images/smart%20lab.png" type="image/x-icon">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand gradient-text-color" href="index.html" style="font-family: Rubik, sans-serif;
+    font-weight: 700;">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="70" src="images/smart%20lab.png" alt="Wallet">SMART LAB
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="main.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="delivers.html">Delivers</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="reception.html">reception</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Results.html">Results</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Tracking.html">Tracking</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" id="logout">LogOut</a>
+			</div>
+		</div>
+	</nav>
+</header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <!-- Search button -->
+    <div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+        <h1 class="gradient-text-color">Package #_ID<span id="packageID">NULL</span></h1>
+        <h3 class="gradient-text-color">Destination : <span id="Destination">NULL</span></h3>
+        <p id="Pstatus">Status : NULL</p>
+            
+            
+            <div class="form-group mb-4 pb-2" id="StatusP">
+            <label for="exampleFormControlInput1" class="form-label">Change Status</label>
+            <select class="form-select" aria-label="Default select example" style="color: black" id="PackStatus" required>
+              <option selected disabled="disabled">Change Status</option>
+              
+              <option value="3">Reciepted</option>
+              
+            </select>
+            </div>  
+        
+        </div>
+        <div class="col-lg-6 col-md-12 BarC" align="right">
+              
+            
+            
+            
+        <svg id="barcode" height="20px"></svg>
+
+        </div>
+        </div>
+        <!-- Steps  -->
+        
+        
+    </div>
+    <section class="section loan-steps pt-4">
+	<div class="container">
+<div class="row justify-content-center align-items-center">
+			<div class="col-lg-7">
+				<div class=" text-center">
+					<p class="gradient-text-color text-uppercase fw-bold mb-3">STEPS</p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center pt-0">
+			<div class="col-lg-10">
+				<div class="row justify-content-center">
+					<div class="step-item col-lg-3 col-md-6">
+						<div class="text-center">
+							<p class="count">01</p>
+							<h3 class="mb-3 rounded-pill" style="background-color: red;color: white">Organize</h3>
+							
+						</div>
+					</div>
+					<div class="step-item col-lg-3 col-md-6">
+						<div class="text-center">
+							<p class="count">02</p>
+							<h3 class="mb-3 rounded-pill" style="background-color: #cccc00;color: white">Ready</h3>
+							
+						</div>
+					</div>
+					<div class="step-item col-lg-3 col-md-6">
+						<div class="text-center">
+							<p class="count">03</p>
+							<h3 class="mb-3 rounded-pill" style="background-color: #87CEEB;color: white">Transport</h3>
+							
+						</div>
+					</div>
+                    <div class="step-item col-lg-3 col-md-6">
+						<div class="text-center">
+							<p class="count">04</p>
+							<h3 class="mb-3 rounded-pill" style="background-color: #51B56D;color: white">Receipted</h3>
+							
+						</div>
+					</div>
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    
+    <div class="container mt-4">
+    <div class="row">
+    <div class="col-lg-6 col-md-12">
+        
+        
+        <div class="input-group mb-3">
+            <input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Search In Tubes" id="SearchInput">
+                        <span class="input-group-text border-0 p-0" style="background-color: #51B56D">
+                        <button class="input-group-text border-0 bg-primary" type="submit" 
+                                 >
+                                    <i class="fas fa-arrow-right"></i>
+                            </button>
+                              </span>
+							</div>
+        
+        </div>
+        
+        
+        
+        
+        <div class="col-lg-6 col-md-12">
+          <button type="button" class="btn btn-primary ms-2 ms-lg-3" style="float: right" id="printButton"> Print Package Ticket</button> 
+            
+       
+            
+            
+            <!-- Delete package 
+            <input type="hidden" id="PackageID">
+            <button type="button" class="btn btn-danger  btn-rounded" id="deletePack" style="float: right"> Delete Package</button> -->
+        </div>
+    
+    </div>
+        
+        
+        
+        
+        <div class="row">
+        <table class="table align-middle bg-white mt-4 mb-4" id="TableInfo">
+  <thead class="bg-white">
+    <tr>
+      <th class="gradient-text-color">Tube_ID</th>
+      <th class="gradient-text-color">Distination</th>
+      <th class="gradient-text-color">Status</th>
+      <th class="gradient-text-color">Patien Name</th>
+      <th class="gradient-text-color">Actions</th>
+    </tr>
+  </thead>
+  <tbody id="TableBody">
+      
+  </tbody>
+</table>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<footer class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Service</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="service-details.html">Personal loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Home Equity Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Student Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Mortgage Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Payday Loans</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#!">Benefits</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="#!">Our Story</a>
+						</li>
+						<li class="mb-2"><a href="#!">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form action="#!" method="post" name="mc-embedded-subscribe-form" target="_blank">
+							<div class="input-group mb-3">
+								<input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+							</div>
+						</form>
+					</div>
+					<p class="mb-0">Lorem ipsum dolor sit amet, rdghds consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/smart%20lab.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+    
+<!-- BarCode -->
+<script src="js/JsBarcode.all.min.js"></script>
+    
+    <script>
+        $("#StatusP").hide();
+        $( document ).ready(function() {
+    
+            
+        //------------------------------------------------------------------------//
+            //Get URL params
+        var currentLocation = window.location.href;
+        console.log(currentLocation);
+        let params = (new URL(currentLocation)).searchParams;
+        var packID = params.get('pid');
+        //set Data In the page
+        JsBarcode("#barcode", packID);
+        $("#packageID").html(packID);
+        $("#Destination").html(params.get('name'));
+        $("#PackageID").val(packID);
+
+        //choose status
+            var status = params.get('status');
+            //hide change status if his not on the road
+            
+            console.log(status);
+                //Set Status values
+                  if(status==0){
+                      var Pstatus = 'Status : <span class="badge badge-success rounded-pill d-inline" style="background-color: red;color: white">&nbsp;Organize&nbsp;</span> '; 
+                      
+                  }if(status==1){
+                      var Pstatus = 'Status : <span class="badge badge-success rounded-pill d-inline" style="background-color: #cccc00;color: white">&nbsp;&nbsp;Ready&nbsp;&nbsp;</span> '; 
+                      
+                  }if(status==2){
+                      var Pstatus = 'Status : <span class="badge badge-success rounded-pill d-inline" style="background-color: #87CEEB;color: white">&nbsp;Transport&nbsp;</span> '; 
+                      $("#StatusP").show();
+                  }if(status==3){
+                      var Pstatus = 'Status : <span class="badge badge-success rounded-pill d-inline" style="background-color: #51B56D;color: white">&nbsp;Receipted&nbsp;</span> ';
+                  }
+      $("#Pstatus").html(Pstatus); 
+            
+    //------------------------------------------------------------------------//
+            //Bring Package Tubes
+            if(packID=== null || packID===""){
+                alert("There is no ID");
+                window.location.href = "main.html";
+            }else{
+                //alert("There is id");
+                //Post data For Bring Tubes List
+                 //Bring Data       
+                var api_url = "http://localhost:8090/packages/GetPTubesList";
+                  var jsonVar = {
+                    pid: packID,};
+                //Send Request
+                  $.ajax({
+                        type:"POST",
+                        url:api_url,
+                        data: JSON.stringify(jsonVar),
+                        contentType: "application/json",
+                        success: function(data){
+                            //Destination var 
+                            var destination = params.get('name');
+                            console.log(data);
+                            $("#TableBody").empty;
+                            //Set data in table 
+                             var Tubes = JSON.parse(JSON.stringify(data));
+                            //Check if There is existing Tubes inside the package
+                            //if there is no tubes location:main
+                            if(Tubes.length < 1){
+                                window.location.href = "main.html";
+                            }
+                            //display data in table
+                                 for (var i in Tubes) {
+                                    $("tbody").
+                                    append('\
+                       <tr> \
+                        <td>\
+                            <div class="d-flex align-items-center">\
+                  <img src="images/tubeLogo.png" style="width: 45px; height: 45px" class="rounded-circle"/>\
+                              <div class="ms-3">\
+<input type="hidden" value="'+Tubes[i].tid+'"><a href="receptionTube.html?tid='+Tubes[i].tid+'&name='+Tubes[i].patient+'&destination='+destination+'&bdate='+Tubes[i].page+'" target="_blank"><p class="fw-bold mb-1 gradient-text-color">#_ID'+Tubes[i].tid+'</p></a>\
+                                <p class="text-muted mb-0">Owner: Me</p>\
+                              </div>\
+                            </div>\
+                        </td>\
+\
+\
+                 <td>\
+                    <p class="fw-normal mb-1" style="color: black">#_'+Tubes[i].dlid+'</p>\
+                    <p class="text-muted mb-0">Lab</p>\
+                  </td>\
+\
+\
+                  <td><span class="badge badge-success rounded-pill d-inline" style="background-color: #51B56D">Active</span></td>\
+\
+\
+                     <td style="color: black">'+Tubes[i].patient+'</td>\
+\
+\
+\
+                    <td>\
+                        <a href="receptionTube.html?tid='+Tubes[i].tid+'&name='+Tubes[i].patient+'&destination='+destination+'&bdate='+Tubes[i].page+'" target="_blank"><button type="button" class="btn btn-primary  btn-rounded"> Show</button></a> </td>\
+\
+\
+\
+                             \
+                            \
+                        </tr>'); }
+
+                        },
+                        error: function(err) {
+                            console.log(err);
+                            
+                        }
+                 });
+                
+  
+            }
+            
+    //-----------------------------------------------------------------//  
+            //Delete Tube Button
+             $('table').on('click', 'button[id="deleteT"]', function(e){
+       //var Tid = $(this).closest('tr').children('td:first').text();
+         var Tid = $(this).closest("tr").find('input[type=hidden]').val();
+             console.log(Tid);
+                 
+                  $.ajax({
+            type:"DELETE",
+            url:"http://localhost:8090/packages/DeleteTube/" + Tid,
+            success: function(data){
+                
+               window.location.reload();
+            },
+            error: function(err) {  
+                console.log(err);
+               window.location.href = "main.html";
+            }
+        });
+             });
+    //-----------------------------------------------------------------//
+            //Delete Package Button
+               $('#deletePack').on('click', function(e){
+       //var Tid = $(this).closest('tr').children('td:first').text();
+         var Packageid = $("#PackageID").val();
+             console.log(Packageid);
+                 
+                  $.ajax({
+            type:"DELETE",
+            url:"http://localhost:8090/packages/DeletePack/" + Packageid,
+            success: function(data){
+                
+               window.location.href = "main.html";
+            },
+            error: function(err) {
+                console.log(err);
+               window.location.href = "main.html";
+            }
+        });   
+             });
+//--------------------------------------------------------------------//
+            //Change Status
+    $("#PackStatus").change(function(){   // On Change Status
+    //alert("changed");
+    //Select labs from database
+  
+        
+        
+            //analyse id
+              
+        var UpdatePackStatus = {
+          
+          pstatus : $( "#PackStatus option:selected" ).val(),
+          did:params.get('did'),
+            
+        };
+        
+        var pid = params.get('pid');
+        var Pname = params.get('name');
+        var NewStatus =  $( "#PackStatus option:selected" ).val();
+        var PackUrl = 'receptionPack.html?pid='+pid+'&name='+Pname+'&status='+NewStatus;
+        //alert(UpdatePackStatus.pid);  
+            
+         $.ajax({
+                type:"PUT",
+                data: JSON.stringify(UpdatePackStatus),
+                contentType: "application/json",
+                url:"http://localhost:8090/track/UpdateStatusReception/" + pid,
+                success: function(data){
+                  
+                  window.location.href = PackUrl;
+                },
+                error: function(err) {  
+                    console.log(err);
+                    alert(err);
+                    window.location.href = "main.html";
+                }
+
+        });   
+       
+    
+            
+});        
+            
+//---------------------------------------------------------------------------------------------//            //Print Tickit
+    $("#printButton").click(function(){
+     swal("Great!", "Your Tube was Added!", "success");
+       /* var prtContent = document.getElementById(".BarC");
+        var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+        
+        WinPrint.document.write(prtContent.innerHTML);
+        WinPrint.document.close();
+        WinPrint.focus();
+        WinPrint.print();
+        WinPrint.close(); */
+        
+    });        
+//---------------------------------------------------------------------------------------------//            //Search Button
+    $("#SearchInput").keyup(function myFilterT() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("SearchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("TableInfo");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+});      
+            
+});
+  
+        
+        
+        //check user logged in
+        /*//logout
+        //document.cookie = "lid="; */
+        let logCkeck = document.cookie.split('=')[1].trim();
+        if (logCkeck === null || logCkeck === "") {
+            swal("Warning!", "Your Connection expired please login again", "warning");
+             setTimeout(() => {  window.location.href = "login.html"; }, 2000);
+        }
+
+    
+    </script>
+</body>
+</html>

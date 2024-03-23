@@ -1,0 +1,234 @@
+
+<!--
+ // WEBSITE: labtech
+ // author: saoudi anis
+ // from : @wm.dev
+ // GITHUB: https://github.com/saoudianis
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>My Lab's</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Saoudi Anis">
+	<link rel="shortcut icon" href="../images/smart%20lab.png" type="image/x-icon">
+	<link rel="icon" href="../images/smart%20lab.png" type="image/x-icon">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="../plugins/slick/slick.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+    
+
+<body>
+    
+    <header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand gradient-text-color" href="index.html" style="font-family: Rubik, sans-serif;
+    font-weight: 700;">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="70" src="../images/smart%20lab.png" alt="Wallet">SMART LAB
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="main.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="delivers.html">Delivers</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="reception.html">reception</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Results.html">Results</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Tracking.html">Tracking</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- account btn  <a href="login.html" class="btn btn-outline-primary">Log In</a> -->
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" id="logout">LogOut</a>
+			</div>
+		</div>
+	</nav>
+</header>
+    
+    
+    
+      <!-- Search button -->
+    <div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Search Button" id="SearchInput">
+                        <span class="input-group-text border-0 p-0" style="background-color: #51B56D">
+                        <button class="input-group-text border-0 bg-primary" type="submit" 
+                                 >
+                                    <i class="fas fa-arrow-right"></i>
+                            </button>
+                              </span>
+							</div>
+        
+        </div>
+        <div class="col-lg-6 col-md-12">
+        <a href="AddLab.html" target="_blank" class="btn btn-primary ms-2 ms-lg-3" style="float: right">Add a New Laboratory </a>
+        </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- Labs List -->
+    <div class="container mt-4" style="min-height: 600px">
+    <table class="table align-middle bg-white mt-4 mb-4" id="TableInfo">
+  <thead class="bg-white">
+    <tr>
+      <th class="gradient-text-color">Lab_ID</th>
+      <th class="gradient-text-color">Lab Name</th>
+      <th class="gradient-text-color">Phone Number</th>
+      <th class="gradient-text-color">Email</th>
+      <th class="gradient-text-color">Actions</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+  
+    
+  </tbody>
+</table>
+    </div>
+    <!-- # JS Plugins -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+<script src="../plugins/slick/slick.min.js"></script>
+<script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Main Script -->
+<script src="../js/script.js"></script>
+    
+    
+<script>
+    
+   assignDataToTable();
+        function assignDataToTable() {
+             $("#tbody").empty;
+            //http://localhost:8091/bff/admin/postlabs
+        $.ajax({    
+          type:"POST",
+            url:"http://localhost:8091/bff/admin/postlabs",
+          success: function(data) {
+             console.log(data);
+              var packages = JSON.parse(JSON.stringify(data));
+              $("tbody").empty;
+              
+                  for (var i in packages) {
+                //Set data in table  
+                $("tbody").
+                append('\
+                       <tr> \
+                        <td>\
+                            <div class="d-flex align-items-center">\
+                  <img src="../images/smart%20lab.png" style="width: 45px; height: 45px" class="rounded-circle"/>\
+                              <div class="ms-3">\
+                   <a href="lab.html?lid='+packages[i].lid+'" target="_blank"><p class="fw-bold mb-1 gradient-text-color">#_ID'+packages[i].lid+'</p></a>\
+                                <p class="text-muted mb-0">Owner: Me</p>\
+                              </div>\
+                            </div>\
+                        </td>\
+\
+\
+                 <td>\
+                    <p class="fw-normal mb-1" style="color: black">'+packages[i].l_name+'</p>\
+                    <p class="text-muted mb-0">Lab</p>\
+                  </td>\
+\
+\
+\
+                     <td style="color: black">'+packages[i].l_phoneN+'</td>\
+                        <td style="color: black">'+packages[i].email+'</td>\
+\
+\
+\
+                    <td>\
+                         <a href="lab.html?lid='+packages[i].lid+'" target="_blank"><button type="button" class="btn btn-outline-primary btn-rounded"> Edit</button></a> </td>\
+\
+\
+\
+                             \
+                            \
+                        </tr>');
+                  }
+              
+              
+              
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+    }
+       
+    
+    
+    //---------------------------------------------------------------------------------------------//            //Search Button
+    $("#SearchInput").keyup(function myFilterT() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("SearchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("TableInfo");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+});      
+        
+     
+    
+    </script>    
+    
+    
+    </body>
+    
+    
+    

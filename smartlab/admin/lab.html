@@ -1,0 +1,217 @@
+
+<!--
+ // WEBSITE: labtech
+ // author: saoudi anis
+ // from : @wm.dev
+ // GITHUB: https://github.com/saoudianis
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Add a Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Saoudi Anis">
+	<link rel="shortcut icon" href="../images/smart%20lab.png" type="image/x-icon">
+	<link rel="icon" href="../images/smart%20lab.png" type="image/x-icon">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="../plugins/slick/slick.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+    
+
+<body>
+    
+    <header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand gradient-text-color" href="index.html" style="font-family: Rubik, sans-serif;
+    font-weight: 700;">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="70" src="../images/smart%20lab.png" alt="Wallet">SMART LAB
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="main.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="delivers.html">Delivers</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="reception.html">reception</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Results.html">Results</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Tracking.html">Tracking</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- account btn  <a href="login.html" class="btn btn-outline-primary">Log In</a> -->
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" id="logout">LogOut</a>
+			</div>
+		</div>
+	</nav>
+</header>
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<p class="text-primary text-uppercase fw-bold mb-3 gradient-text-color">Select This Lab Available analyses</p>
+					<h1 class="gradient-text-color">let&rsquo;s select our analyses</h1>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-lg-10 d-flex justify-content-center text-center">
+			
+                <div class="text-center center" id="analysetypes">
+              <!-- <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+            </div>
+            <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                      </label>
+            </div>-->
+                </div>
+                
+                
+                
+                
+			</div>
+		</div>
+	</div>
+</section>
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- # JS Plugins -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+<script src="../plugins/slick/slick.min.js"></script>
+<script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Main Script -->
+<script src="../js/script.js"></script>
+    
+    
+<script>
+  
+    
+    
+    //Get URL params
+        var currentLocation = window.location.href;
+        //console.log(currentLocation);
+        let params = (new URL(currentLocation)).searchParams;
+        var labID = params.get('lid');
+     
+    console.log(labID);
+    
+    
+    
+    //bring analyses
+        BringAnalyses();
+        function BringAnalyses() {
+        
+        $.ajax({    
+          type:"GET",
+          contentType: "application/json",
+          url:"http://localhost:8090/analyses",
+          success: function(data) {
+             console.log(data);
+              
+              
+              //data
+              var users = JSON.parse(JSON.stringify(data));
+              console.log(users);
+              
+              //display data in table
+              for (var i in users) {
+                  
+                  
+                  
+                   $("#analysetypes").append('<div class="form-check">\
+                      <input class="form-check-input" type="checkbox" value="'+ users[i].analyseid+'" id="flexCheckDefault">\
+                      <label class="form-check-label" for="flexCheckDefault">\
+                        '+users[i].analysename+'\
+                      </label></div>');
+                  //<option value="'+users[i].analyseid+'">'+users[i].analysename+'</option>
+              }
+              
+              
+             
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+        }
+    
+    </script>    
+    
+    
+    </body>
+    
+</html>
+    

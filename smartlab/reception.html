@@ -1,0 +1,464 @@
+
+
+<!--
+ // WEBSITE: labtech
+ // author: saoudi anis
+ // from : @wm.dev
+ // GITHUB: https://github.com/saoudianis
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>reception Packages</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Saoudi Anis">
+	<link rel="shortcut icon" href="images/smart%20lab.png" type="image/x-icon">
+	<link rel="icon" href="images/smart%20lab.png" type="image/x-icon">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand gradient-text-color" href="main.html" style="font-family: Rubik, sans-serif;
+    font-weight: 700;">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="70" src="images/smart%20lab.png" alt="Wallet">SMART LAB
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="main.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="delivers.html">Delivers</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="reception.html">reception</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Results.html">Results</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Tracking.html">Tracking</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" id="logout">LogOut</a>
+			</div>
+		</div>
+	</nav>
+</header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <!-- Search button -->
+    <div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Search Button" id="SearchInput">
+                        <span class="input-group-text border-0 p-0" style="background-color: #51B56D">
+                        <button class="input-group-text border-0 bg-primary" type="submit" 
+                                 >
+                                    <i class="fas fa-arrow-right"></i>
+                            </button>
+                              </span>
+							</div>
+        
+        </div>
+        <div class="col-lg-6 col-md-12">
+        <a href="AddTube.html" target="_blank" class="btn btn-primary ms-2 ms-lg-3" style="float: right">Add a blood collection tube </a>
+        </div>
+        </div>
+    </div>
+    
+    
+    <!-- Packeges List -->
+    <div class="container mt-4" style="min-height: 600px">
+    <table class="table align-middle bg-white mt-4 mb-4" id="TableInfo">
+  <thead class="bg-white">
+    <tr>
+      <th class="gradient-text-color">Package_ID</th>
+      <th class="gradient-text-color">Distination</th>
+      <th class="gradient-text-color">Status</th>
+      <th class="gradient-text-color">Deliver</th>
+      <th class="gradient-text-color">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+       <!-- 
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+              alt=""
+              style="width: 45px; height: 45px"
+              class="rounded-circle"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1 gradient-text-color">John Doe</p>
+            <p class="text-muted mb-0">john.doe@gmail.com</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" style="color: black">Software engineer</p>
+        <p class="text-muted mb-0">IT department</p>
+      </td>
+      <td>
+        <span class="badge badge-success rounded-pill d-inline" style="background-color: #51B56D">Active</span>
+      </td>
+      <td style="color: black">Senior</td>
+      <td>
+        <button type="button" class="btn btn-outline-primary btn-rounded">
+          Edit
+        </button>
+      </td>
+    </tr>
+       -->
+    
+  </tbody>
+</table>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<footer class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Service</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="service-details.html">Personal loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Home Equity Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Student Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Mortgage Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Payday Loans</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#!">Benefits</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="#!">Our Story</a>
+						</li>
+						<li class="mb-2"><a href="#!">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form action="#!" method="post" name="mc-embedded-subscribe-form" target="_blank">
+							<div class="input-group mb-3">
+								<input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+							</div>
+						</form>
+					</div>
+					<p class="mb-0">Lorem ipsum dolor sit amet, rdghds consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/smart%20lab.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+    <script>
+    assignDataToTable();
+        function assignDataToTable() {
+        $("tbody").empty;
+            let lid = document.cookie.split('=')[1].trim();
+              var packageinfo = {
+            pdestination: lid,
+           
+          };
+          
+        $.ajax({    
+          type:"POST",
+            url:"http://localhost:8090/reception/GetPackages",
+            data: JSON.stringify(packageinfo),
+            contentType: "application/json",
+          success: function(data) {
+             console.log(data);
+              var packages = JSON.parse(JSON.stringify(data));
+              $("tbody").empty;
+              
+              //display data in table
+              for (var i in packages) {
+                //Set Status values
+                  if(packages[i].pstatus==0){
+                      var status = '<td><span class="badge badge-success rounded-pill d-inline" style="background-color: red">&nbsp;Organize&nbsp;</span></td> '; 
+                  }if(packages[i].pstatus==1){
+                      var status = '<td><span class="badge badge-success rounded-pill d-inline" style="background-color: #cccc00">&nbsp;&nbsp;Ready&nbsp;&nbsp;</span></td> '; 
+                  }if(packages[i].pstatus==2){
+                      var status = '<td><span class="badge badge-success rounded-pill d-inline" style="background-color: #87CEEB">&nbsp;Transport&nbsp;</span></td> '; 
+                  }if(packages[i].pstatus==3){
+                      var status = '<td><span class="badge badge-success rounded-pill d-inline" style="background-color: #51B56D">&nbsp;Receipted&nbsp;</span></td> '; 
+                  }
+                  
+                  
+                  
+                //Set data in table  
+                $("tbody").
+                append('\
+                       <tr> \
+                        <td>\
+                            <div class="d-flex align-items-center">\
+                  <img src="images/receptionPack.png" style="width: 45px; height: 45px" class="rounded-circle"/>\
+                              <div class="ms-3">\
+                   <a href="receptionPack.html?pid='+packages[i].pid+'&name='+packages[i].pdestination+'&status='+packages[i].pstatus+'&did=1" target="_blank"><p class="fw-bold mb-1 gradient-text-color">#_ID'+packages[i].pid+'</p></a>\
+                                <p class="text-muted mb-0">Owner: Me</p>\
+                              </div>\
+                            </div>\
+                        </td>\
+\
+\
+                 <td>\
+                    <p class="fw-normal mb-1" style="color: black">'+packages[i].pdestination+'</p>\
+                    <p class="text-muted mb-0">Lab</p>\
+                  </td>\
+\
+\
+                  '+status+'\
+\
+\
+                     <td style="color: black">'+packages[i].did+'</td>\
+\
+\
+\
+                    <td>\
+                        <button type="button" class="btn btn-outline-primary btn-rounded"> Edit</button> </td>\
+\
+\
+\
+                             \
+                            \
+                        </tr>');
+            }
+              
+              
+              
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+       
+    }
+        
+        window.onload = function(){
+    
+    //checklog();
+    //call packages
+            //getpackages();
+};
+        
+         
+        
+        function checklog() {
+        
+        $.ajax({    
+          type:"GET",
+          contentType: "application/json",
+          url:"http://localhost:8090/checklablogin",
+          success: function(data) {
+             console.log(data);
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+       
+    }
+        
+        function getpackages() {
+            var packageinfo = {
+            powner: "1",
+           
+          };
+        
+        $.ajax({    
+          type:"POST",
+            url:"http://localhost:8090/packages/GetPackages",
+            data: JSON.stringify(packageinfo),
+            contentType: "application/json",
+          success: function(data) {
+              
+             console.log(" Packages : "+data);
+              var packages = JSON.parse(JSON.stringify(data));
+               for (var i in packages) {
+                console.log("owner: "+ packages[i].powner);
+                   console.log("P_id: "+ packages[i].pid);
+                   }
+              
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+       
+    }
+        
+//---------------------------------------------------------------------------------------------//            //Search Button
+    $("#SearchInput").keyup(function myFilterT() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("SearchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("TableInfo");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+});      
+        
+        
+        //check user logged in
+        /*//logout
+        //document.cookie = "lid="; */
+        let logCkeck = document.cookie.split('=')[1].trim();
+        if (logCkeck === null || logCkeck === "") {
+            swal("Warning!", "Your Connection expired please login again", "warning");
+             setTimeout(() => {  window.location.href = "login.html"; }, 2000);
+        }
+        
+    </script>
+
+</body>
+</html>

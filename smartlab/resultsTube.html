@@ -1,0 +1,484 @@
+
+
+<!--
+ // WEBSITE: labtech
+ // author: saoudi anis
+ // from : @wm.dev
+ // GITHUB: https://github.com/saoudianis
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Tube</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Saoudi Anis">
+	<link rel="shortcut icon" href="images/smart%20lab.png" type="image/x-icon">
+	<link rel="icon" href="images/smart%20lab.png" type="image/x-icon">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand gradient-text-color" href="index.html" style="font-family: Rubik, sans-serif;
+    font-weight: 700;">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="70" src="images/smart%20lab.png" alt="Wallet">SMART LAB
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="main.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="delivers.html">Delivers</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="reception.html">reception</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Results.html">Results</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Tracking.html">Tracking</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" id="logout">LogOut</a>
+			</div>
+		</div>
+	</nav>
+</header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Tube Data  -->
+    <div class="container mt-4 mb-4">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+        <h1 class="gradient-text-color">Tube #_ID<span id="TubeID">NULL</span></h1>
+        <h3 class="gradient-text-color">Destination : <span id="Destination">NULL</span></h3>
+        <h4 class="gradient-text-color">Patient : <span id="Patient">NULL</span></h4>
+        <h4 class="gradient-text-color">Analyse Type : <span id="AnalyseType">NULL</span></h4>    
+        <p>Birth Date : <span  id="BDate"></span></p>
+        
+        </div>
+        <div class="col-lg-6 col-md-12" align="right">
+        <svg id="barcode" height="20px"></svg>
+
+        </div>
+        </div>
+        
+       
+    </div>
+    
+    
+    <!-- CRUD-->
+    <!--
+    <div class="container mt-4 mb-4">
+    <div class="row">
+    <div class="col-lg-6 col-md-12">
+        <div class="input-group mb-3">
+           <a href="#" target="_blank" class="btn btn-primary ms-2 ms-lg-3" style="float: right;width: 90%">Print Tube Ticket </a>
+        </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-12">
+        <a href="#" target="_blank" class="btn btn-danger ms-2 ms-lg-3" style="float: left;width: 90%" id="DeleteTube" >Delete The Tube </a>
+        </div>
+        
+        </div></div> -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="container"><div class="row">
+        <div class="col-lg-12 col-md-12" id="result">
+        
+
+    
+        </div>
+        </div> </div>
+    
+    
+    
+    
+    
+    
+<footer class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Service</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="service-details.html">Personal loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Home Equity Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Student Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Mortgage Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Payday Loans</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#!">Benefits</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="#!">Our Story</a>
+						</li>
+						<li class="mb-2"><a href="#!">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form action="#!" method="post" name="mc-embedded-subscribe-form" target="_blank">
+							<div class="input-group mb-3">
+								<input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+							</div>
+						</form>
+					</div>
+					<p class="mb-0">Lorem ipsum dolor sit amet, rdghds consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/smart%20lab.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- BarCode -->
+<script src="js/JsBarcode.all.min.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+    <script>
+    $( document ).ready(function() {
+    
+            $("#SubResult").hide();
+        //------------------------------------------------------------------------//
+            //Get URL params
+        var currentLocation = window.location.href;
+        console.log(currentLocation);
+        let params = (new URL(currentLocation)).searchParams;
+        var packID = params.get('tid');
+        //set Data In the page
+        JsBarcode("#barcode", packID);
+        $("#TubeID").html(packID);
+        $("#Destination").html(params.get('destination'));
+        $("#Patient").html(params.get('name'));
+        $("#BDate").html(params.get('bdate'));
+        
+        
+        
+        //-------------Bring Analyse Name--------//
+        
+        var Tid = params.get('tid');
+        //Load data
+             $.ajax({    
+          type:"GET",
+          contentType: "application/json",
+          url:"http://localhost:8090/reception/GetAnalyseName/" + Tid,
+          success: function(data) {
+             
+              var analyse = JSON.parse(JSON.stringify(data));
+                console.log(analyse);
+              $("#AnalyseType").html(analyse.analysename);
+              if(analyse.result != "null"){
+                  var embediv ='<embed src="http://localhost:8090/reception/download/'+analyse.result+'" height="800" width="100%" />';
+                  $("#result").html(embediv);
+                  //----------------------Button
+                $("#SubResult").show();
+                  
+              }
+          },
+          error: function(data) { 
+              swal("Opss!", "Your Tube Data Can not Load", "error");
+                //setTimeout(() => {  window.location.href = "reception.html"; }, 3000);
+          
+            }
+        });
+        
+        
+        
+        
+        //-------------Delete Tube -----------//
+        $('#DeleteTube').on('click', function(e){
+            alert("clicked");
+            if (confirm("Are You Sure ...!")) {
+            var Tid = params.get('tid');
+            
+            
+            $.ajax({
+            type:"DELETE",
+            url:"http://localhost:8090/packages/DeleteTube/" + Tid,
+            success: function(data){
+                
+               window.close();
+            },
+            error: function(err) {  
+                alert(err);
+               window.location.reload();
+            }
+        }); 
+            }
+            
+        });
+        //--------------------Upload File -------------------//
+        $('#save').on('click', function(e){
+            
+            ///------method one------//
+            var form = $('form')[0]; // You need to use standard javascript object here
+            var formData = new FormData(form);
+            var formData = new FormData();
+            formData.append('section', 'general');
+            formData.append('action', 'previewImg');
+            // Attach file
+            formData.append('image', $('input[type=file]')[0].files[0]); 
+            //-----------------------//
+            
+             /*var formTag = $("#import-form")[0];
+            var formData = new FormData(formTag);
+            formData.append("file", $(this)[0].files[0]);*/
+            var myFile = $('#fileinput').prop('files')[0];
+             //var fileSize = myFile.size;
+            //var checkSize = $("#fileinput")[0].files[0].fileSize;//
+            //var checkSize =$("#fileinput")[0].files[0].size;
+            console.log(myFile);
+            //console.log(fileSize);
+            if((myFile != 0) && (myFile != null) && (myFile != undefined)){
+                var Tid = params.get('tid');
+                var apiURL = "http://localhost:8090/reception/uploadResult/"+ Tid ;
+                var jsonVar = {image: myFile,};
+                
+                //send data
+                $.ajax({
+                url: apiURL,
+                data: formData,
+                type: 'POST',
+                contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
+                processData: false, // NEEDED, DON'T OMIT THIS
+                success: function(data) {
+            swal("Great!", "Your Result File Added", "success");
+               setTimeout(() => {  window.location.reload(); }, 2000);
+              
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+                
+             /*   $.ajax({    
+          type:"POST",
+            url:apiURL,
+            data: JSON.stringify(jsonVar),
+            processData: false,
+            contentType: false,
+          success: function(data) {
+            alert("added");
+              
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+              */  
+                /*$.ajax ({
+                    url : apiURL ,
+                    data :jsonVar,
+                    type :"post" ,
+
+                    // Tell jQuery not to process data or not to worry about content-type 
+                    // You *must* include these options in order to send MultipartFile objects 
+                    cache : false ,
+                    contentType : false ,
+                    processData : false ,
+                    method : 'POST' ,
+                    type : 'POST' ,
+
+                    success :function (data ){
+                        console .log (data);
+                    },
+                    error : function (err){
+                        swal ( "Oops" ,  "Something went wrong! Please Try Again" ,  "error" );
+                    }
+                    });*/
+                
+            }else{
+               
+                    swal ( "Oops" ,  "Please Select a File First" ,  "error" );
+            }
+            
+        });
+        
+        
+        //-------------Submit Tube Result -----------//
+        $('#SubResult').on('click', function(e){
+          
+            console.log("clicked");
+            
+             if (confirm("Are You Sure ...!")) {
+            var Tid = params.get('tid');
+            
+            
+            $.ajax({
+            type:"DELETE",
+            url:"http://localhost:8090/reception/SubmitResult/" + Tid,
+            success: function(data){
+               swal("Great!", "Your Result File Added", "success");
+               setTimeout(() => {  window.close(); }, 2000);
+               
+            },
+            error: function(err) {  
+                alert(err);
+               window.location.reload();
+            }
+        }); 
+            }
+            
+        });
+        
+     });
+        
+        
+        //check user logged in
+        /*//logout
+        //document.cookie = "lid="; */
+        let logCkeck = document.cookie.split('=')[1].trim();
+        if (logCkeck === null || logCkeck === "") {
+            swal("Warning!", "Your Connection expired please login again", "warning");
+             setTimeout(() => {  window.location.href = "login.html"; }, 2000);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,548 @@
+
+
+<!--
+ // WEBSITE: labtech
+ // author: saoudi anis
+ // from : @wm.dev
+ // GITHUB: https://github.com/saoudianis
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Add New Tube</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Saoudi Anis">
+	<link rel="shortcut icon" href="images/smart%20lab.png" type="image/x-icon">
+	<link rel="icon" href="images/smart%20lab.png" type="image/x-icon">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand gradient-text-color" href="index.html" style="font-family: Rubik, sans-serif;
+    font-weight: 700;">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="70" src="images/smart%20lab.png" alt="Wallet">SMART LAB
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="main.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="delivers.html">Delivers</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="reception.html">reception</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Results.html">Results</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Tracking.html">Tracking</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" id="logout">LogOut</a>
+			</div>
+		</div>
+	</nav>
+</header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<p class="text-primary text-uppercase fw-bold mb-3 gradient-text-color">Add a new blood collection tube</p>
+					<h1 class="gradient-text-color">let&rsquo;s Create our tube</h1>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-lg-10">
+				<div class="shadow rounded p-5 bg-white">
+					<div class="row">
+						<div class="col-12 mb-4">
+							<h4>Please Set The Tube Informations</h4>
+                            <div id="alert" class="bg-danger" style="color: black"></div>
+						</div>
+                        
+						<div class="col-lg-12">
+							<div class="contact-form">
+								
+									<div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Patient Name</label>
+										<input type="text" class="form-control shadow-none" id="PatientName" required >
+									</div>
+									<div class="form-group mb-4 pb-2">
+										<label for="birth" class="form-label">Patient Birth date</label>
+                                        
+										<input type="date" id="birth" class="pt-4" required >
+									</div>
+                                    
+                                    <div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Packages</label>
+										<select class="form-select" aria-label="Default select example" style="color: black" id="packages" required>
+                                        
+                                          
+                                        </select>
+									</div>
+                                    
+                                    <div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Analyse Type</label>
+										<select class="form-select" aria-label="Default select example" style="color: black" id="analyse" required>
+                                          <option selected disabled="disabled">Select Analyse Type</option>
+                                          <option value="1">HBA - Lab. Saidani</option>
+                                          <option value="2">HBA - Lab. makhlofi</option>
+                                          <option value="3">HBA - Lab. 9adore</option>
+                                          
+                                        </select>
+									</div>
+                                    
+                                    <div class="form-group mb-4 pb-2" id="labsoption">
+										<label for="exampleFormControlInput1" class="form-label">Labs Available</label>
+										<select class="form-select" aria-label="Default select example" style="color: black" id="labAnalyse" required>
+                                          <option selected disabled="disabled">Select Lab</option>
+                                          <option value="1">Lab. Saidani</option>
+                                          <option value="2">Lab. makhlofi</option>
+                                          <option value="3">Lab. 9adore</option>
+                                          
+                                        </select>
+									</div>
+									
+									<button class="btn btn-primary w-100"  id="save">Creat Tube</button>
+								
+							</div>
+						</div>
+						<div class="col-lg-6 mt-5 mt-lg-0">
+                            
+                            
+                          
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <style>
+    input[type="date"]{
+    background-color: #51B56D;
+    padding: 15px;
+    
+    
+    
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<footer class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Service</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="service-details.html">Personal loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Home Equity Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Student Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Mortgage Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Payday Loans</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#!">Benefits</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="#!">Our Story</a>
+						</li>
+						<li class="mb-2"><a href="#!">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form action="#!" method="post" name="mc-embedded-subscribe-form" target="_blank">
+							<div class="input-group mb-3">
+								<input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+							</div>
+						</form>
+					</div>
+					<p class="mb-0">Lorem ipsum dolor sit amet, rdghds consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/smart%20lab.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+    <script>
+    /*
+    const dateControl = document.querySelector('input[type="date"]');
+dateControl.value = '2017-06-01';
+console.log(dateControl.value); // prints "2017-06-01"
+console.log(dateControl.valueAsNumber); // prints 1496275200000, a JavaScript timestamp (ms)
+//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+    */
+//---------------------------------------------------------------------------------------------//        
+        //Package option's
+  
+     SetPackages();
+        function SetPackages() {
+        
+    /*    //Package type
+        var package_type = $( "#package option:selected" ).val();
+            
+        if(package_type == "NEW"){
+        var api_url = "http://localhost:8090/newpackage";
+           }else{
+           var api_url = "http://localhost:8090/addtube";
+           }   */
+            
+            let lid = document.cookie.split('=')[1].trim();
+            console.log(lid);
+              var packageinfo = {
+            powner: lid,
+           
+          };
+            
+            
+        $.ajax({    
+          type:"POST",
+           data: JSON.stringify(packageinfo),
+            contentType: "application/json",
+          url:"http://localhost:8090/packages/GetPackages",
+          success: function(data) {
+             console.log(data);
+              //empty labs select option
+              $("#packages").empty();
+              //set first row
+              $("#packages").append('<option selected disabled="disabled">Select Package</option>');
+              $("#packages").append('<option value="NEW">New Package</option>');
+              
+              //data
+              var users = JSON.parse(JSON.stringify(data));
+              
+              console.log(users);
+              //display data in table
+              for (var i in users) {
+                   $("#packages").append('<option value="'+users[i].pid+'">#_'+users[i].pid+'</option>');
+              }
+              
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+       
+    }
+            
+ 
+        
+        
+//---------------------------------------------------------------------------------------------// 
+        //labs option's
+        $('#labsoption').hide();
+        $("#analyse").change(function(){   // 1st
+    //alert("changed");
+    //Select labs from database
+     SetLabs();
+        function SetLabs() {
+        
+            //analyse id
+              
+            var jsonVar = {
+          analyseid : $( "#analyse option:selected" ).val(),
+            
+        };
+            
+            
+        $.ajax({    
+          type:"POST",
+          url:"http://localhost:8090/setlabs",
+          data: JSON.stringify(jsonVar),
+          contentType: "application/json",
+          success: function(data) {
+             console.log(data);
+              //empty labs select option
+              $("#labAnalyse").empty();
+              //set first row
+              $("#labAnalyse").append('<option selected disabled="disabled">Select Lab</option>');
+              
+              //data
+              var users = JSON.parse(JSON.stringify(data));
+              
+              console.log(users);
+              //display data in table
+              for (var i in users) {
+                   $("#labAnalyse").append('<option value="'+users[i].lid+'">'+users[i].l_name+'</option>');
+              }
+              //show data
+              $('#labsoption').show();
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+       
+    }
+            
+});
+//---------------------------------------------------------------------------------------------//         
+        //bring analyses
+        BringAnalyses();
+        function BringAnalyses() {
+        
+        $.ajax({    
+          type:"GET",
+          contentType: "application/json",
+          url:"http://localhost:8090/analyses",
+          success: function(data) {
+             console.log(data);
+              //empty labs select option
+              $("#analyse").empty();
+              //set first row
+              $("#analyse").append('<option selected disabled="disabled">Select Analyse Type</option>');
+              
+              //data
+              var users = JSON.parse(JSON.stringify(data));
+              console.log(users);
+              
+              //display data in table
+              for (var i in users) {
+                   $("#analyse").append('<option value="'+users[i].analyseid+'">'+users[i].analysename+'</option>');
+              }
+              //show data
+             
+          },
+          error: function(data) { 
+            console.log(data);
+            }
+        });
+       
+//---------------------------------------------------------------------------------------------// 
+        /// Save Tube
+         $("#save").click(function() {
+             //check if all fields are filled
+             let valid = true;
+              $('[required]').each(function() {
+                if ($(this).is(':invalid') || !$(this).val()) valid = false;
+              })
+              if (!valid) {swal("Warning!", "Please fill all fields!", "warning");}
+              else {
+                 // alert('valid');
+            //Package type
+        var package_type = $( "#packages option:selected" ).val();
+            
+        if(package_type == "NEW"){
+            let lid = document.cookie.split('=')[1].trim();
+        var api_url = "http://localhost:8090/addNewPackage";
+             //Bring Data
+          var jsonVar = {
+            pid: $( "#packages option:selected" ).val(),
+            powner: lid,
+            patient: $("#PatientName").val(),
+            page: document.getElementById("birth").value,
+            dlid: $( "#labAnalyse option:selected" ).val(),
+            analyse: $( "#analyse option:selected" ).val(),
+          };
+            
+           }else{
+           var api_url = "http://localhost:8090/addtube";
+                //Bring Data
+          var jsonVar = {
+            pid: $( "#packages option:selected" ).val(),
+            patient: $("#PatientName").val(),
+            page: document.getElementById("birth").value,
+            dlid: $( "#labAnalyse option:selected" ).val(),
+            analyse: $( "#analyse option:selected" ).val(),
+          };
+           }      
+                  
+                  
+       
+        console.log(jsonVar);
+                 
+         $.ajax({
+            type:"POST",
+            url:api_url,
+            data: JSON.stringify(jsonVar),
+            contentType: "application/json",
+            success: function(data){
+                console.log(data);
+                swal("Great!", "Your Tube was Added!", "success");
+               setTimeout(() => {  window.location.href = "main.html"; }, 2000);
+                
+               
+                //window.location.href = "main.html";
+            },
+            error: function(err) {
+                console.log(err);
+                alert("there is an error");
+            }
+        });        
+                 
+           }      
+                 
+             });
+  //---------------------------------------------------------------------------------------------//            
+            
+    }
+        
+        //check user logged in
+        /*//logout
+        //document.cookie = "lid="; */
+        let logCkeck = document.cookie.split('=')[1].trim();
+        if (logCkeck === null || logCkeck === "") {
+            swal("Warning!", "Your Connection expired please login again", "warning");
+             setTimeout(() => {  window.location.href = "login.html"; }, 2000);
+        }
+    </script>
+
+</body>
+</html>

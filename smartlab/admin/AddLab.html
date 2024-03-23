@@ -1,0 +1,244 @@
+
+<!--
+ // WEBSITE: labtech
+ // author: saoudi anis
+ // from : @wm.dev
+ // GITHUB: https://github.com/saoudianis
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Add a Lab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Saoudi Anis">
+	<link rel="shortcut icon" href="../images/smart%20lab.png" type="image/x-icon">
+	<link rel="icon" href="../images/smart%20lab.png" type="image/x-icon">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="../plugins/slick/slick.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="../plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+    
+
+<body>
+    
+    <header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand gradient-text-color" href="index.html" style="font-family: Rubik, sans-serif;
+    font-weight: 700;">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="70" src="../images/smart%20lab.png" alt="Wallet">SMART LAB
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="main.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="delivers.html">Delivers</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="reception.html">reception</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Results.html">Results</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="Tracking.html">Tracking</a>
+					</li>
+					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- account btn  <a href="login.html" class="btn btn-outline-primary">Log In</a> -->
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" id="logout">LogOut</a>
+			</div>
+		</div>
+	</nav>
+</header>
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<p class="text-primary text-uppercase fw-bold mb-3 gradient-text-color">Add a new Lab</p>
+					<h1 class="gradient-text-color">let&rsquo;s Create our Lab account</h1>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-lg-10">
+				<div class="shadow rounded p-5 bg-white">
+					<div class="row">
+						<div class="col-12 mb-4">
+							<h4>Please Set The Lab Informations</h4>
+                            <div id="alert" class="bg-danger" style="color: black"></div>
+						</div>
+                        
+						<div class="col-lg-12">
+							<div class="contact-form">
+                               <!-- <form> -->
+								
+									<div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Lab Name</label>
+										<input type="text" class="form-control shadow-none" id="labname" pattern="[a-z]{3,15}" title="Invalid Lab Name" required >
+									</div>
+                                <div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Lab Adress</label>
+										<input type="text" class="form-control shadow-none" id="labadress" pattern="[a-z0-9.-]{3,30}" title="Invalid Lab Adresse" required >
+									</div>
+                                <div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+										<input type="text" class="form-control shadow-none" id="Phone" pattern="[0-9]{10}" title="Invalid Phone Number" required >
+									</div>
+                                <div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Email</label>
+										<input type="text" class="form-control shadow-none" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address" required >
+									</div>
+                                <div class="form-group mb-4 pb-2">
+										<label for="exampleFormControlInput1" class="form-label">Password</label>
+										<input type="password" class="form-control shadow-none" id="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,30}$" title="Invalid PassWord" required >
+									</div>
+									
+                                    
+                                   
+                                 
+									<input type="submit" value="Creat My New Lab" class="btn btn-primary w-100"  id="save" />
+									<!--<button class="btn btn-primary w-100"  id="save">Creat My New Deliver</button>
+                                </form>-->
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- # JS Plugins -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+<script src="../plugins/slick/slick.min.js"></script>
+<script src="../plugins/scrollmenu/scrollmenu.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Main Script -->
+<script src="../js/script.js"></script>
+    
+    
+<script>
+    
+ $("#save").click(function() {
+        let valid = true;
+        let msg = "";
+              $('[required]').each(function() {
+                if ($(this).is(':invalid') || !$(this).val()) {
+                    //Get invalide titel
+                    msg = msg + $(this).attr('title') + "\n";
+                    valid = false;}
+              })
+              if (!valid) {swal("Warning!", msg, "warning");}
+              else {
+            var api_url = "http://localhost:8091/bff/user/create";
+                  //let lid = document.cookie.split('=')[1].trim();
+             //Bring Data
+          var jsonVar = {
+            
+            userName: $("#labname").val(),
+            address: $("#labadress").val(),
+            phoneNbr: $("#Phone").val(),
+            email: $("#Email").val(),
+            password: $("#Password").val(),
+            userType: "LABORATORY",
+           
+          };      
+                  
+                  
+                  
+               $.ajax({
+            type:"POST",
+            url:api_url,
+            data: JSON.stringify(jsonVar),
+            contentType: "application/json",
+            success: function(data){
+                console.log(data);
+                swal("Great!", "A new Lab Added", "success");
+               setTimeout(() => {  window.location.href = "main.html"; }, 2000);
+                
+               
+                //window.location.href = "main.html";
+            },
+            error: function(err) {
+                console.log(err);
+                alert("There is an error");
+            }
+        }); 
+                  
+                  
+              }
+    });
+   
+     
+    
+    </script>    
+    
+    
+    </body>
+    
+    
+    
